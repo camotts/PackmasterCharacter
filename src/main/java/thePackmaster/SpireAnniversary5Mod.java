@@ -1381,6 +1381,26 @@ public class SpireAnniversary5Mod implements
     public static float time = 0f;
 
     public static void exportImages() {
+        AbstractCard strike = new Strike();
+        createImageFromCard(strike, "Documents\\Programming\\Java\\Slay the Spire\\Rendered Pics\\packmaster\\"+sanitizeFilename(strike.name)+".png");
+        strike.upgrade();
+        createImageFromCard(strike, "Documents\\Programming\\Java\\Slay the Spire\\Rendered Pics\\packmaster\\"+sanitizeFilename(strike.name)+"_upgraded.png");
+
+        AbstractCard defend = new Defend();
+        createImageFromCard(defend, "Documents\\Programming\\Java\\Slay the Spire\\Rendered Pics\\packmaster\\"+sanitizeFilename(defend.name)+".png");
+        defend.upgrade();
+        createImageFromCard(defend, "Documents\\Programming\\Java\\Slay the Spire\\Rendered Pics\\packmaster\\"+sanitizeFilename(defend.name)+"_upgraded.png");
+
+        AbstractCard rummage = new Rummage();
+        createImageFromCard(rummage, "Documents\\Programming\\Java\\Slay the Spire\\Rendered Pics\\packmaster\\"+sanitizeFilename(rummage.name)+".png");
+        rummage.upgrade();
+        createImageFromCard(rummage, "Documents\\Programming\\Java\\Slay the Spire\\Rendered Pics\\packmaster\\"+sanitizeFilename(rummage.name)+"_upgraded.png");
+
+        AbstractCard cs = new Cardistry();
+        createImageFromCard(cs, "Documents\\Programming\\Java\\Slay the Spire\\Rendered Pics\\packmaster\\"+sanitizeFilename(cs.name)+".png");
+        cs.upgrade();
+        createImageFromCard(cs, "Documents\\Programming\\Java\\Slay the Spire\\Rendered Pics\\packmaster\\"+sanitizeFilename(cs.name)+"_upgraded.png");
+
         for (AbstractCardPack i : SpireAnniversary5Mod.unfilteredAllPacks) {
             for (AbstractCard c : i.cards) {
                 createImageFromCard(c, "Documents\\Programming\\Java\\Slay the Spire\\Rendered Pics\\"+sanitizeFilename(i.name)+"\\"+sanitizeFilename(c.name)+".png");
