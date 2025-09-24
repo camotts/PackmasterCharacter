@@ -1,28 +1,28 @@
 {
   "${ModID}:TheFool": {
     "NAME": "The Fool",
-    "DESCRIPTION": "Innate. NL Deal !D! damage. NL Apply !M! Weak. NL Exhaust."
+    "DESCRIPTION": "{@@}When drawn 1 [StrikeTextIcon] NL !D! [StrikeTextIcon] NL [WeakenedTextIcon] {!Upgrades!|1=[WeakenedTextIcon]} NL Exhaust."
   },
   "${ModID}:Justice": {
     "NAME": "Justice",
-    "DESCRIPTION": "Gain !B! Block for each enemy in combat."
+    "DESCRIPTION": "!B! [BlockTextIcon] for each enemy in your row."
   },
   "${ModID}:TheHermit": {
     "NAME": "The Hermit",
-    "DESCRIPTION": "Gain !B! Block. NL Discard a card. Draw cards equal to its cost. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Discard a card. Draw cards equal to its cost."
+    "DESCRIPTION": "!B! [BlockTextIcon] NL Discard a card. Draw cards equal to its cost. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "!B! [BlockTextIcon] NL Discard a card. Draw cards equal to its cost."
   },
   "${ModID}:TheHangedMan": {
     "NAME": "The Hanged Man",
-    "DESCRIPTION": "Whenever you draw a card this turn, ALL enemies lose !M! HP."
+    "DESCRIPTION": "Whenever you draw a card this turn, [AoeTextIcon] !M! [StrikeTextIcon]"
   },
   "${ModID}:TheTower": {
     "NAME": "The Tower",
-    "DESCRIPTION": "Deal !D! damage. NL If this kills an enemy, play a copy of this card."
+    "DESCRIPTION": "!D! [StrikeTextIcon] NL If this kills an enemy, play this card again."
   },
   "${ModID}:Death": {
     "NAME": "Death",
-    "DESCRIPTION": "Deal !D! damage. NL Kill the enemy if they have 10% or less of their max HP afterwards."
+    "DESCRIPTION": "!D! [StrikeTextIcon] NL Kill the enemy if they have 10% or less of their max HP afterwards."
   },
   "${ModID}:Temperance": {
     "NAME": "Temperance",
@@ -31,14 +31,14 @@
   },
   "${ModID}:TheHierophant": {
     "NAME": "The Hierophant",
-    "DESCRIPTION": "Gain !B! Block. NL Remove all your debuffs. NL Exhaust."
+    "DESCRIPTION": "!B! [BlockTextIcon] NL Remove all your debuffs. NL Exhaust."
   },
   "${ModID}:TheSun": {
     "NAME": "The Sun",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Apply !M! Vulnerable to the highest HP enemy. NL Exhaust."
+    "DESCRIPTION": "[AoeTextIcon] !D! [StrikeTextIcon] NL [VulnerableTextIcon] to the highest HP enemy. NL Exhaust."
   },
   "${ModID}:TheChariot": {
     "NAME": "The Chariot",
-    "DESCRIPTION": "Whenever you discard a card during your turn, gain !M! Vigor."
+    "DESCRIPTION": "{@@}Whenever you discard a card during your turn, [ChariotTextIcon] {!Upgrades!|1=[ChariotTextIcon]} NL ( [ChariotTextIcon] increases your next attack's damage by 1)"
   }
 }

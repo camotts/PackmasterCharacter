@@ -14,7 +14,7 @@ public class Death extends AbstractAstrologerCard {
 
     public Death() {
         super(ID, 0, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
-        baseDamage = 6;
+        baseDamage = 1;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -35,6 +35,6 @@ public class Death extends AbstractAstrologerCard {
     }
 
     public void upp() {
-        upgradeDamage(3);
+        upgradeDamage(1);
     }
 }

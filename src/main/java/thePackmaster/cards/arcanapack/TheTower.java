@@ -15,7 +15,7 @@ public class TheTower extends AbstractAstrologerCard {
 
     public TheTower() {
         super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
-        baseDamage = 18;
+        baseDamage = 2;
 
         AnimatedCardsPatch.loadFrames(this, 7, 0.13f);
     }
@@ -25,6 +25,6 @@ public class TheTower extends AbstractAstrologerCard {
     }
 
     public void upp() {
-        upgradeDamage(5);
+        upgradeDamage(1);
     }
 }

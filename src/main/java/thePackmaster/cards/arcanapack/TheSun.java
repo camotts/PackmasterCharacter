@@ -19,7 +19,7 @@ public class TheSun extends AbstractAstrologerCard {
 
     public TheSun() {
         super(ID, 3, CardType.ATTACK, CardRarity.RARE, CardTarget.ALL_ENEMY);
-        baseDamage = 22;
+        baseDamage = 3;
         baseMagicNumber = magicNumber = 99;
         exhaust = true;
 
@@ -60,6 +60,6 @@ public class TheSun extends AbstractAstrologerCard {
     }
 
     public void upp() {
-        upgradeDamage(8);
+        upgradeDamage(1);
     }
 }

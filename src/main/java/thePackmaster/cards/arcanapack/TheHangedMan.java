@@ -14,7 +14,7 @@ public class TheHangedMan extends AbstractAstrologerCard {
 
     public TheHangedMan() {
         super(ID, 0, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.NONE);
-        baseMagicNumber = magicNumber = 4;
+        baseMagicNumber = magicNumber = 1;
 
         AnimatedCardsPatch.loadFrames(this, 16, 0.20f);
     }
@@ -24,6 +24,6 @@ public class TheHangedMan extends AbstractAstrologerCard {
     }
 
     public void upp() {
-        upgradeMagicNumber(2);
+        upgradeMagicNumber(1);
     }
 }

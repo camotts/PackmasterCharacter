@@ -18,8 +18,8 @@ public class TheFool extends AbstractAstrologerCard {
 
         AnimatedCardsPatch.loadFrames(this, 28, 0.07f);
 
-        this.damage = this.baseDamage = 3;
-        this.magicNumber = this.baseMagicNumber = 3;
+        this.damage = this.baseDamage = 1;
+        this.magicNumber = this.baseMagicNumber = 1;
 
         isInnate = true;
         exhaust = true;
