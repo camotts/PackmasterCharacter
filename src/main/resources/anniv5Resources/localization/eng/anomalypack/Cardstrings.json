@@ -17,21 +17,21 @@
   "${ModID}:VoraciousSigil": {
     "NAME": "Voracious Sigil",
     "DESCRIPTION": "${ModID}:Absorb a random Skill in your hand. Play all the cards this has ${ModID}:Absorbed.",
-    "UPGRADE_DESCRIPTION": "Innate. NL ${ModID}:Absorb a random Skill in your hand. Play all the cards this has ${ModID}:Absorbed."
+    "UPGRADE_DESCRIPTION": "NL ${ModID}:Absorb a Skill in your hand. Play all the cards this has ${ModID}:Absorbed."
   },
   "${ModID}:StrikeThroughFate": {
     "NAME": "Strike Through Fate",
-    "DESCRIPTION": "Deal !D! damage. If this is your 7th card this turn, deal !D! damage three times instead.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. If this is your 7th card this turn, deal !D! damage three times instead."
+    "DESCRIPTION": "!D! [StrikeTextIcon] NL If this is your 7th card this turn, NL !D! [StrikeTextIcon] !D! [StrikeTextIcon] !D! [StrikeTextIcon] instead.",
+    "UPGRADE_DESCRIPTION": "Retain. NL !D! [StrikeTextIcon] NL If this is your 7th card this turn, NL !D! [StrikeTextIcon] !D! [StrikeTextIcon] !D! [StrikeTextIcon] instead."
   },
   "${ModID}:MindOverMatter": {
     "NAME": "Mind Over Matter",
-    "DESCRIPTION": "Whenever you draw a card, gain 1 Block.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you draw a card, gain 1 Block."
+    "DESCRIPTION": "Whenever you draw a card, 1 [BlockTextIcon]",
+    "UPGRADE_DESCRIPTION": "Whenever you draw a card, 1 [BlockTextIcon] to any player"
   },
   "${ModID}:GoldenGun": {
     "NAME": "Golden Gun",
-    "DESCRIPTION": "Deal !D! damage. NL Must be [#EFC851]Loaded. NL Startup: Add a [#EFC851]Golden [#EFC851]Round to your draw pile. "
+    "DESCRIPTION": "!D! [StrikeTextIcon] NL Must be [#EFC851]Loaded. NL Startup: Add a [#EFC851]Golden [#EFC851]Round to your draw pile. "
   },
   "${ModID}:GoldenRound": {
     "NAME": "Golden Round",
@@ -39,12 +39,12 @@
   },
   "${ModID}:RitualSight": {
     "NAME": "Ritual Sight",
-    "DESCRIPTION": "Gain !B! Block. NL Exhaust 1 card. Shuffle a copy of it into your draw pile.",
+    "DESCRIPTION": "!B! [BlockTextIcon] NL Exhaust 1 card. Shuffle a copy of it into your draw pile. Think about this.",
     "EXTENDED_DESCRIPTION": ["Exhaust and copy."]
   },
   "${ModID}:Thoughtweaving": {
     "NAME": "Thoughtweaving",
-    "DESCRIPTION": "Whenever you play a Skill or Attack, draw 1 card of the opposite type from a different Pack."
+    "DESCRIPTION": "Whenever you play a Skill or Attack, draw 1 card of the opposite type from a different Pack. Think about this."
   },
   "${ModID}:SealedSword": {
   "NAME": "Sealed Sword",
@@ -53,6 +53,6 @@
 },
   "${ModID}:SouleaterStrike": {
     "NAME": "Souleater Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Apply !M! Weak."
+    "DESCRIPTION": "!D! [StrikeTextIcon] NL !M! [VulnerableTextIcon] NL !M! [WeakTextIcon]"
   }
 }
