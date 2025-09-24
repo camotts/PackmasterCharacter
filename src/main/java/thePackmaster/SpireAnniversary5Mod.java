@@ -14,8 +14,13 @@ import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Pixmap;
+import com.badlogic.gdx.graphics.PixmapIO;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.glutils.FrameBuffer;
+import com.badlogic.gdx.math.Matrix4;
+import com.badlogic.gdx.utils.ScreenUtils;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.mod.stslib.icons.CustomIconHelper;
 import com.evacipated.cardcrawl.modthespire.Loader;
@@ -46,7 +51,7 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import javassist.CtClass;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import thePackmaster.cards.AbstractPackmasterCard;
+import thePackmaster.cards.*;
 import thePackmaster.cards.batterpack.UltimateHomerun;
 import thePackmaster.cards.bitingcoldpack.GrowingAffliction;
 import thePackmaster.cards.cardvars.SecondDamage;
@@ -1375,7 +1380,57 @@ public class SpireAnniversary5Mod implements
 
     public static float time = 0f;
 
+    public static void exportImages() {
+        for (AbstractCardPack i : SpireAnniversary5Mod.unfilteredAllPacks) {
+            for (AbstractCard c : i.cards) {
+                createImageFromCard(c, "Documents\\Programming\\Java\\Slay the Spire\\Rendered Pics\\"+sanitizeFilename(i.name)+"\\"+sanitizeFilename(c.name)+".png");
+                c.upgrade();
+                createImageFromCard(c, "Documents\\Programming\\Java\\Slay the Spire\\Rendered Pics\\"+sanitizeFilename(i.name)+"\\"+sanitizeFilename(c.name)+"_upgraded.png");
+            }
+        }
+    }
 
+    public static String sanitizeFilename(String inputName) {
+        return inputName.replaceAll("[^a-zA-Z0-9-_\\.]", "_");
+    }
+
+    public static void createImageFromCard(AbstractCard c, String fileLoc) {
+        FileHandle to = Gdx.files.external(fileLoc);
+
+        //int width = 822;
+        //int height = 1122;
+        int xPadding = 50;
+        int yPadding = 50;
+        int width = (int)((AbstractCard.RAW_W * c.drawScale) * Settings.scale)+xPadding;
+        int height = (int)((AbstractCard.RAW_H * c.drawScale) * Settings.scale)+yPadding;
+        Texture out = new Texture( width, height, Pixmap.Format.RGB888);
+        FrameBuffer fbo = new FrameBuffer(Pixmap.Format.RGB888,  width, height, false);
+        c.current_x = ((AbstractCard.RAW_W * c.drawScale) * Settings.scale) / 2f + ((float)xPadding/2);
+        c.current_y = ((AbstractCard.RAW_H * c.drawScale) * Settings.scale) / 2f + ((float)yPadding/2);
+        Gdx.gl.glActiveTexture(fbo.getColorBufferTexture().glTarget);
+        fbo.begin();
+
+        SpriteBatch sb = new SpriteBatch();
+        Matrix4 matrix = new Matrix4();
+        matrix.setToOrtho2D(0,0,width,height);
+        matrix.scale(1,1,1);
+        matrix.translate(0,height,0);
+        matrix.rotate(1,0,0,180);
+        sb.setProjectionMatrix(matrix);
+
+        sb.begin();
+        c.render(sb);
+        sb.end();
+
+
+        if (!fbo.getColorBufferTexture().getTextureData().isPrepared()) {
+            fbo.getColorBufferTexture().getTextureData().prepare();
+        }
+
+        Pixmap pm = ScreenUtils.getFrameBufferPixmap(0, 0, width, height);
+        fbo.end();
+        PixmapIO.writePNG(to, pm);
+    }
 
     private static AutoAdd getAutoAdd() {
         return new MultiModAutoAdd(modID, expansionPackModID);

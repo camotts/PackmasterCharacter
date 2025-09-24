@@ -23,6 +23,7 @@ public class OpeningRunScreenPatch {
     public static class NeowPatches {
         @SpireInsertPatch(locator = Locator.class)
         public static void SetTheThing(AbstractEvent __instance) {
+            SpireAnniversary5Mod.exportImages();
             if (!Settings.isEndless || AbstractDungeon.floorNum <= 1) {
                 if (AbstractDungeon.player.chosenClass == ThePackmaster.Enums.THE_PACKMASTER && SpireAnniversary5Mod.currentPoolPacks.isEmpty()) {
                     if (SpireAnniversary5Mod.allPacksMode) {
