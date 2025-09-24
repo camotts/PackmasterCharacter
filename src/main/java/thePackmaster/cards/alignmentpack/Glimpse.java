@@ -13,7 +13,7 @@ public class Glimpse extends AbstractAstrologerCard {
 
     public Glimpse() {
         super(ID, 1, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 3;
+        baseMagicNumber = magicNumber = 1;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -21,6 +21,6 @@ public class Glimpse extends AbstractAstrologerCard {
     }
 
     public void upp() {
-        upgradeMagicNumber(2);
+        upgradeMagicNumber(1);
     }
 }
