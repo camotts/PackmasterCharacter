@@ -14,8 +14,8 @@ import thePackmaster.SpireAnniversary5Mod;
 public class Decapitate extends AbstractAggressionCard {
     public static final String ID = SpireAnniversary5Mod.makeID("Decapitate");
     private static final int COST = 1;
-    private static final int DAMAGE = 10;
-    private static final int UPGRADE_DAMAGE = 3;
+    private static final int DAMAGE = 1;
+    private static final int UPGRADE_DAMAGE = 1;
     private static final int TEMP_STRENGTH_DOWN = 4;
     private static final int UPGRADE_TEMP_STRENGTH_DOWN = 2;
 

@@ -12,10 +12,10 @@ import thePackmaster.SpireAnniversary5Mod;
 public class Vindicate extends AbstractAggressionCard {
     public static final String ID = SpireAnniversary5Mod.makeID("Vindicate");
     private static final int COST = 1;
-    private static final int DAMAGE = 7;
-    private static final int UPGRADE_DAMAGE = 1;
-    private static final int RAGE = 3;
-    private static final int UPGRADE_RAGE = 2;
+    private static final int DAMAGE = 1;
+    private static final int UPGRADE_DAMAGE = 0;
+    private static final int RAGE = 1;
+    private static final int UPGRADE_RAGE = 1;
 
     public Vindicate() {
         super(ID, COST, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
