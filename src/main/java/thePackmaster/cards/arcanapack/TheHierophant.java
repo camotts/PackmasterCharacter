@@ -14,7 +14,7 @@ public class TheHierophant extends AbstractAstrologerCard {
 
     public TheHierophant() {
         super(ID, 1, CardType.SKILL, CardRarity.RARE, CardTarget.SELF);
-        baseBlock = 6;
+        baseBlock = 1;
         exhaust = true;
 
         AnimatedCardsPatch.loadFrames(this, 7, 0.12f);
@@ -26,6 +26,6 @@ public class TheHierophant extends AbstractAstrologerCard {
     }
 
     public void upp() {
-        upgradeBlock(4);
+        upgradeBlock(1);
     }
 }

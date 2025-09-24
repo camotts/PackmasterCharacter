@@ -21,7 +21,7 @@ public class TheHermit extends AbstractAstrologerCard {
 
     public TheHermit() {
         super(ID, 0, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.NONE);
-        baseBlock = block = 3;
+        baseBlock = block = 1;
         exhaust = true;
 
         AnimatedCardsPatch.loadFrames(this, 5, 0.1f);
