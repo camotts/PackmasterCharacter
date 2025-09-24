@@ -13,8 +13,8 @@ import thePackmaster.SpireAnniversary5Mod;
 public class SouleaterStrike extends AbstractAnomalyCard {
     public static final String ID = SpireAnniversary5Mod.makeID("SouleaterStrike");
     private static final int COST = 1;
-    private static final int ATTACK_DMG = 13;
-    private static final int MAGIC = 13;
+    private static final int ATTACK_DMG = 2;
+    private static final int MAGIC = 2;
 
     public SouleaterStrike() {
         super(ID, COST, CardType.ATTACK, CardRarity.SPECIAL, CardTarget.ENEMY, CardColor.COLORLESS);

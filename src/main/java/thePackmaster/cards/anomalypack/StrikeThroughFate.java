@@ -11,7 +11,7 @@ import thePackmaster.cards.AbstractPackmasterCard;
 
 public class StrikeThroughFate extends AbstractAnomalyCard {
     public static final String ID = SpireAnniversary5Mod.makeID("StrikeThroughFate");
-    private static final int ATTACK_DMG = 7;
+    private static final int ATTACK_DMG = 1;
     private static final int COST = 0;
 
 

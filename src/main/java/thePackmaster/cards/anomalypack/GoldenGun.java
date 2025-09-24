@@ -13,8 +13,8 @@ import thePackmaster.util.Wiz;
 
 public class GoldenGun extends AbstractAnomalyCard implements StartupCard {
     public static final String ID = SpireAnniversary5Mod.makeID("GoldenGun");
-    private static final int ATTACK_DMG = 50;
-    private static final int UPGRADE_PLUS_DMG = 14;
+    private static final int ATTACK_DMG = 5;
+    private static final int UPGRADE_PLUS_DMG = 2;
     private static final int COST = 1;
     public boolean loaded;
 
