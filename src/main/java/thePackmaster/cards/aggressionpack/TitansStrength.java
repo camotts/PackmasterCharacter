@@ -10,8 +10,8 @@ import thePackmaster.SpireAnniversary5Mod;
 public class TitansStrength extends AbstractAggressionCard {
     public static final String ID = SpireAnniversary5Mod.makeID("TitansStrength");
     private static final int COST = 2;
-    private static final int BLOCK = 14;
-    private static final int UPGRADE_BLOCK = 4;
+    private static final int BLOCK = 2;
+    private static final int UPGRADE_BLOCK = 1;
     private static final int STRENGTH = 1;
 
     public TitansStrength() {

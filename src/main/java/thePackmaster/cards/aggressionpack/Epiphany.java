@@ -15,7 +15,7 @@ import thePackmaster.stances.aggressionpack.AggressionStance;
 public class Epiphany extends AbstractAggressionCard {
     public static final String ID = SpireAnniversary5Mod.makeID("Epiphany");
     private static final int COST = 1;
-    private static final int DRAW = 3;
+    private static final int DRAW = 2;
     private static final int UPGRADE_DRAW = 1;
 
     public Epiphany() {
