@@ -1,7 +1,7 @@
 {
   "${ModID}:InspiringSong": {
     "NAME": "Inspiring Song",
-    "DESCRIPTION": "Channel !M! Frost. NL Gain ${ModID}:Inspiration !${ModID}:m2! NL for each Channeled Orb."
+    "DESCRIPTION": "Channel !M! Frost. NL [InspirationTextIcon] for each Channeled Orb. Every 2 inspiration increases your next card's block and attack by 1"
   },
   "${ModID}:Sift": {
     "NAME": "Sift",
@@ -10,42 +10,42 @@
   },
   "${ModID}:EchoEcho": {
     "NAME": "Echo Echo",
-    "DESCRIPTION": "Deal !D! damage. NL Deal !${ModID}:sd! damage."
+    "DESCRIPTION": "!D! [StrikeTextIcon] NL !${ModID}:sd! [StrikeTextIcon]"
   },
   "${ModID}:ThickOfTheFight": {
     "NAME": "Thick of the Fight",
-    "DESCRIPTION": "Deal !D! damage to a random enemy for each living enemy. NL Costs 1 less [E] NL for each living enemy."
+    "DESCRIPTION": "!D! [StrikeTextIcon] to an enemy for each living enemy in the row. NL Costs 1 less [E] NL for each living enemy in the row."
   },
   "${ModID}:EnGarde": {
     "NAME": "En Garde",
-    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage. NL ${ModID}:Inspiration affects this card !M! times."
+    "DESCRIPTION": "!B! [BlockTextIcon] NL !D! [StrikeTextIcon] NL ${ModID}:Inspiration affects this card !M! times."
   },
   "${ModID}:Heroism": {
     "NAME": "Heroism",
-    "DESCRIPTION": "Gain !M! Temporary_HP. NL Gain ${ModID}:Inspiration !${ModID}:m2!."
+    "DESCRIPTION": "Gain !M! Temporary_HP. NL [InspirationTextIcon] NL Every 2 inspiration increases your next card's block and attack by 1"
   },
   "${ModID}:LifeDrain": {
     "NAME": "Life Drain",
-    "DESCRIPTION": "Deal !D! damage. NL Gain Temporary_HP for half the unblocked damage dealt."
+    "DESCRIPTION": "!D! [StrikeTextIcon] NL Gain Temporary_HP for half the unblocked damage dealt."
   },
   "${ModID}:Shifting": {
     "NAME": "Shifting",
-    "DESCRIPTION": "Deal !D! damage or NL gain !B! Block. NL Deal !D! damage or NL gain !B! Block."
+    "DESCRIPTION": "!D! [StrikeTextIcon] or !B! [BlockTextIcon] NL !D! [StrikeTextIcon] or !B! [BlockTextIcon]"
   },
   "${ModID}:ShiftingAttack": {
     "NAME": "Attack",
-    "DESCRIPTION": "Deal !D! damage."
+    "DESCRIPTION": "!D! [StrikeTextIcon]"
   },
   "${ModID}:ShiftingBlock": {
     "NAME": "Block",
-    "DESCRIPTION": "Gain !B! Block."
+    "DESCRIPTION": "!B! [BlockTextIcon]"
   },
   "${ModID}:MagnumOpus": {
     "NAME": "Magnum Opus",
-    "DESCRIPTION": "Gain ${ModID}:Inspiration !${ModID}:m2!. NL Permanently increase this card's ${ModID}:Inspiration by !M!. NL Exhaust."
+    "DESCRIPTION": "Gain ${ModID}:Inspiration !${ModID}:m2!. NL Permanently increase this card's ${ModID}:Inspiration by !M!. NL Exhaust. Think about this one."
   },
   "${ModID}:SplendidForm": {
     "NAME": "Splendid Form",
-    "DESCRIPTION": "At the start of NL your turn, gain NL ${ModID}:Inspiration !${ModID}:m2!."
+    "DESCRIPTION": "{@@}At the start of NL your turn, [InspirationTextIcon] [InspirationTextIcon] {!Upgrades!|1=[InspirationTextIcon] [InspirationTextIcon]} NL Every 2 inspiration increases your next card's block and attack by 1"
   }
 }

@@ -15,8 +15,8 @@ import static thePackmaster.util.Wiz.atb;
 public class ThickOfTheFight extends AbstractBardCard implements OnCreateCardInterface {
     public final static String ID = makeID("ThickOfTheFight");
     private static final int COST = 3;
-    private static final int DAMAGE = 12;
-    private static final int UPGRADE_DAMAGE = 3;
+    private static final int DAMAGE = 3;
+    private static final int UPGRADE_DAMAGE = 2;
 
     private int currentMonsterCount = 0;
 

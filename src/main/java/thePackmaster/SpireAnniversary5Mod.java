@@ -567,6 +567,7 @@ public class SpireAnniversary5Mod implements
         CustomIconHelper.addCustomIcon(AoeTextIcon.get());
         CustomIconHelper.addCustomIcon(VulnerableTextIcon.get());
         CustomIconHelper.addCustomIcon(ChariotTextIcon.get());
+        CustomIconHelper.addCustomIcon(InspirationTextIcon.get());
 
         BaseMod.addDynamicVariable(new SecondMagicNumber());
         BaseMod.addDynamicVariable(new SecondDamage());

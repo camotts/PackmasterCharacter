@@ -12,9 +12,9 @@ public class EchoEcho extends AbstractBardCard
 {
     public final static String ID = makeID("EchoEcho");
     private static final int COST = 1;
-    private static final int DAMAGE  = 7;
-    private static final int DAMAGE2 = 3;
-    private static final int UPGRADE_DAMAGE = 2;
+    private static final int DAMAGE  = 1;
+    private static final int DAMAGE2 = 1;
+    private static final int UPGRADE_DAMAGE = 1;
 
     public EchoEcho()
     {
@@ -33,7 +33,7 @@ public class EchoEcho extends AbstractBardCard
     @Override
     public void upp()
     {
-        upgradeDamage(UPGRADE_DAMAGE);
+        upgradeDamage(UPGRADE_DAMAGE+UPGRADE_DAMAGE);
         upgradeSecondDamage(UPGRADE_DAMAGE);
     }
 }

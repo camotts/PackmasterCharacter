@@ -22,10 +22,10 @@ public class Shifting extends AbstractBardCard
 {
     public final static String ID = makeID("Shifting");
     private static final int COST = 3;
-    private static final int DAMAGE = 12;
-    private static final int UPGRADE_DAMAGE = 4;
-    private static final int BLOCK = 12;
-    private static final int UPGRADE_BLOCK = 4;
+    private static final int DAMAGE = 3;
+    private static final int UPGRADE_DAMAGE = 2;
+    private static final int BLOCK = 3;
+    private static final int UPGRADE_BLOCK = 2;
 
     public Shifting()
     {
