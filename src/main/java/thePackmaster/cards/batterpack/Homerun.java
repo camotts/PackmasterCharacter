@@ -15,8 +15,8 @@ import static thePackmaster.SpireAnniversary5Mod.makeID;
 public class Homerun extends AbstractBatterCard {
     public final static String ID = makeID("Homerun");
 
-    private static final int DAMAGE = 16;
-    private static final int UPGRADE_PLUS_DMG = 4;
+    private static final int DAMAGE = 3;
+    private static final int UPGRADE_PLUS_DMG = 1;
 
     public Homerun() {
         super(ID, 2, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);

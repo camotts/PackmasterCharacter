@@ -1,19 +1,19 @@
 {
   "${ModID}:BatterUp": {
     "NAME": "Batter Up",
-    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Critical_Hit if the target intends to attack."
+    "DESCRIPTION": "!D! [StrikeTextIcon] NL ${ModID}:Critical_Hit if the target intends to attack."
   },
   "${ModID}:Homerun": {
     "NAME": "Homerun",
-    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Critical_Hit if you've played at least 2 cards this turn."
+    "DESCRIPTION": "!D! [StrikeTextIcon] NL ${ModID}:Critical_Hit if you've played at least 2 cards this turn."
   },
   "${ModID}:WideAngle": {
     "NAME": "Wide Angle",
-    "DESCRIPTION": "Steal !M! Block. NL Apply 1 Weak."
+    "DESCRIPTION": "Steal !M! [BlockTextIcon] NL [WeakenedTextIcon]"
   },
   "${ModID}:WindUp": {
     "NAME": "Wind Up",
-    "DESCRIPTION": "Apply !M! Vulnerable. NL Gain [E]. NL Exhaust."
+    "DESCRIPTION": "!M! [VulnerableTextIcon] NL Gain [E] NL Exhaust"
   },
   "${ModID}:OpenBracket": {
     "NAME": "Open Bracket",
@@ -21,16 +21,16 @@
   },
   "${ModID}:Tragedy": {
     "NAME": "Tragedy",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL ${ModID}:Critical_Hit if you hold 6 or more cards."
+    "DESCRIPTION": "[AoeTextIcon] !D! [StrikeTextIcon] NL ${ModID}:Critical_Hit if you hold 6 or more cards."
   },
   "${ModID}:OptimizedBlur": {
     "NAME": "Optimized Blur",
-    "DESCRIPTION": "Whenever you deal unblocked attack damage, gain !M! Block."
+    "DESCRIPTION": "Whenever you deal unblocked attack damage, gain !M! [BlockTextIcon]"
   },
   "${ModID}:HardCaramel": {
     "NAME": "Hard Caramel",
-    "DESCRIPTION": "After attacking, apply 1 Vulnerable if target doesn't have any.",
-    "UPGRADE_DESCRIPTION": "Innate. NL After attacking, apply 1 Vulnerable if target doesn't have any."
+    "DESCRIPTION": "After attacking, apply [VulnerableTextIcon] if target doesn't have any.",
+    "UPGRADE_DESCRIPTION": "After attacking, apply [VulnerableTextIcon] [VulnerableTextIcon] if target doesn't have any."
   },
   "${ModID}:UltimateHomerun": {
     "NAME": "Ultimate Homerun",
@@ -39,6 +39,6 @@
   },
   "${ModID}:AvatarBeat": {
     "NAME": "Avatar Beat",
-    "DESCRIPTION": "Whenever you deal 10 unblocked attack damage, gain !M! Strength, draw 1 card and raise this bar by 5."
+    "DESCRIPTION": "Whenever you deal 2 unblocked attack damage, gain !M! [StrengthTextIcon] , draw 1 card and raise this bar by 1."
   }
 }
