@@ -14,8 +14,8 @@ import static thePackmaster.SpireAnniversary5Mod.makeID;
 public class BatterUp extends AbstractBatterCard {
     public final static String ID = makeID("BatterUp");
 
-    private static final int DAMAGE = 10;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int DAMAGE = 2;
+    private static final int UPGRADE_PLUS_DMG = 1;
 
     public BatterUp() {
         super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);

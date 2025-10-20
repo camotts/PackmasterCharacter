@@ -16,7 +16,7 @@ public class WideAngle extends AbstractBatterCard {
 
     public WideAngle() {
         super(ID, 0, CardType.SKILL, CardRarity.COMMON, CardTarget.ENEMY);
-        baseMagicNumber = 7;
+        baseMagicNumber = 1;
         magicNumber = this.baseMagicNumber;
     }
 
@@ -45,6 +45,6 @@ public class WideAngle extends AbstractBatterCard {
     }
 
     public void upp() {
-        upgradeMagicNumber(3);
+        upgradeMagicNumber(1);
     }
 }
